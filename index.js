@@ -1,3 +1,4 @@
+var waitingList = [];
 function takeANumber (waitingList, personName) {
   waitingList.push(personName);
   return (
@@ -29,3 +30,14 @@ function currentLine (katzDeliLine) {
   } else 
   return "The line is currently:" + line;
 }
+
+
+var ticketNumber = 1 
+
+function takeATicket (waitingList) {
+  ticketNumber += 1 
+  waitingList.push(ticketNumber)
+  return (
+    "Welcome, You are ticket number "
+    + ticketNumber
+    + " .")
